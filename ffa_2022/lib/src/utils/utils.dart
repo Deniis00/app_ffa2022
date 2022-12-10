@@ -8,6 +8,17 @@ String version() {
   return "27";
 }
 
+//////FILTRO ESTANTE/////
+String _gvFiltro  = "";
+
+String getGvFiltro(){
+  return _gvFiltro;
+}
+
+void setGvFiltro(String v){
+  _gvFiltro = v;
+}
+
 bool isNumeric(String s) {
   if (s.isEmpty) return false;
 

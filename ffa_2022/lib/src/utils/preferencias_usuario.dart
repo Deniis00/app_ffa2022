@@ -20,6 +20,10 @@ class PreferenciasUsuario{
 
   }
 
+  get apiUrl{
+    return _prefs.getString('apiUrl');
+  }
+
   get password {
     return _prefs.getString('password') ?? '';
   }
@@ -50,6 +54,10 @@ class PreferenciasUsuario{
 
   get token {
     return _prefs.getString('token') ?? '';
+  }
+
+  set apiUrl(String valor){
+    _prefs.setString('apiUrl', valor);
   }
 
   set separador(String valor){

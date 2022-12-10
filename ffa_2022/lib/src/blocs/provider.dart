@@ -1,3 +1,4 @@
+import 'package:ffa_2022/src/blocs/funcionario_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:ffa_2022/src/blocs/asigna_estante_bloc.dart';
 import 'package:ffa_2022/src/blocs/detalles_nota_bloc.dart';
@@ -20,6 +21,7 @@ class Provider extends InheritedWidget{
   final _asignaEstanteBloc = AsignaEstanteBloc();
   final _testeNotaSeleccionadaBloc = TesteNotaSeleccionadaBloc();
   final _separaPorNota = SeparaPorNotaBloc();
+  final _funcionariosBloc = FuncionarioBloc();
 
   @override
   bool updateShouldNotify(InheritedWidget oldWidget) => true;
@@ -73,6 +75,11 @@ class Provider extends InheritedWidget{
 
   static SeparaPorNotaBloc separaPorNotaBloc (BuildContext context ){
     return ( context.dependOnInheritedWidgetOfExactType<Provider>() as Provider )._separaPorNota;
+  }
+
+
+  static FuncionarioBloc funcionariosBloc (BuildContext context ){
+    return ( context.dependOnInheritedWidgetOfExactType<Provider>() as Provider )._funcionariosBloc;
   }
 
 }

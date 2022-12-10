@@ -49,8 +49,8 @@ dev_dependencies:
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon/pgs_icon.png"
-  adaptive_icon_background: "assets/icon/pgs_icon.png"
+  image_path: "assets/icon/launcher_icon.png"
+  adaptive_icon_background: "assets/icon/launcher_icon.png"
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -66,7 +66,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/img/
-  #   - images/a_dot_ham.jpeg
+    - assets/img/ffa_2022.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.

@@ -1,4 +1,7 @@
 
+import 'package:ffa_2022/src/pages/inicio_page.dart';
+import 'package:ffa_2022/src/pages/lee_qr_page.dart';
+import 'package:ffa_2022/src/pages/lista_funcionarios.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
@@ -76,20 +79,12 @@ class _MyAppState extends State<MyApp>{
         title: 'FFA_2022',
         debugShowCheckedModeBanner: false,
         navigatorKey: navigatorKey,
-        initialRoute: (prefs.opcionSistema.toString().length == 0)
-                ? 'selecciona_sistema'
-                : (prefs.opcionSistema == "1")
-                  ? (prefs.radar.toString().length == 0)
-                    ? 'selecciona_radar'
-                    : (prefs.nombreUsuario.toString().length == 0)
-                      ? 'login'
-                      : 'selecciona_radar'
-                  : (prefs.nombreUsuario.toString().length == 0)
-                    ? 'login'
-                    : 'teste_inicio',
+        initialRoute: 'inicio',
         onGenerateRoute: (RouteSettings settings) {
             var routes = <String, WidgetBuilder>{
-              'login'                     : (ctx) => LoginsPage(),
+              'lee_qr'                    : (ctx) => LeeQrPage(),
+              'inicio'                    : (ctx) => InicioPage(),
+              'lista-funcionarios'        : (ctx) => ListaFuncionariosPage(),
               'notas_pendientes'          : (ctx) => NotasPendientesPage(),
               'detalles_nota'             : (ctx) => DetallesNotaPage(settings.arguments),
               'ingresar_estante'          : (ctx) => IngresaEstantePage(settings.arguments),

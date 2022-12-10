@@ -177,7 +177,7 @@ class LoginsPage extends StatelessWidget {
       if(prefs.opcionSistema == "1") {
         Navigator.pushReplacementNamed(context, 'notas_pendientes');
       }else{
-        Navigator.pushReplacementNamed(context, 'teste_inicio');
+        Navigator.pushReplacementNamed(context, 'lee_qr');
       }
 
     }
