@@ -44,7 +44,7 @@ class _InicioPageState extends State<InicioPage> {
             titleTextStyle: TextStyle(
               color: Colors.white,
             ),
-            backgroundColor: Colors.red,
+            backgroundColor: Color.fromRGBO(255, 0, 0, 1),
         ),
         body: Center(
           child: Container(

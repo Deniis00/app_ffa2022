@@ -367,7 +367,7 @@ class _ListaFuncionariosPageState extends State<ListaFuncionariosPage> {
         titleTextStyle: TextStyle(
           color: Colors.white,
         ),
-        backgroundColor: Colors.red,
+        backgroundColor: Color.fromRGBO(255, 0, 0, 1),
         actions: [
           searchBar.getSearchAction(context),
 

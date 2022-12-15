@@ -36,7 +36,7 @@ class _LeeQrPageState extends State<LeeQrPage> {
                 titleTextStyle: TextStyle(
                       color: Colors.white,
                 ),
-                backgroundColor: Colors.red,
+                backgroundColor: Color.fromRGBO(255, 0, 0, 1),
               actions: [
                 IconButton(
                   icon: Icon(Icons.list_outlined, size: 30.0,),
@@ -48,6 +48,12 @@ class _LeeQrPageState extends State<LeeQrPage> {
               ],
             ),
             body: Center(child: Container(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage("assets/img/Logo-FFA.png"),
+                  fit: BoxFit.contain,
+                ),
+              ),
 
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.end,
@@ -119,7 +125,7 @@ class _LeeQrPageState extends State<LeeQrPage> {
       style: ButtonStyle(
         padding: MaterialStateProperty.all(EdgeInsets.zero),
         backgroundColor:
-        MaterialStateProperty.all<Color>(Colors.red),
+        MaterialStateProperty.all<Color>(Color.fromRGBO(255, 0, 0, 1)),
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(5),

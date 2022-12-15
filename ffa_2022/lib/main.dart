@@ -6,19 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_easyloading/flutter_easyloading.dart';
 
 import 'package:ffa_2022/src/blocs/provider.dart';
-import 'package:ffa_2022/src/pages/asignar_estante_pages.dart';
-import 'package:ffa_2022/src/pages/busca_notas_separadas.dart';
-import 'package:ffa_2022/src/pages/consulta_detalles_nota_page.dart';
-import 'package:ffa_2022/src/pages/detalles_nota_page.dart';
-import 'package:ffa_2022/src/pages/ingresa_estante_page.dart';
-import 'package:ffa_2022/src/pages/login_page.dart';
-import 'package:ffa_2022/src/pages/notas_pendientes_page.dart';
-import 'package:ffa_2022/src/pages/selecciona_impresora_radar_page.dart';
-import 'package:ffa_2022/src/pages/selecciona_sistema_page.dart';
-import 'package:ffa_2022/src/pages/separacion_por_nota_page.dart';
-import 'package:ffa_2022/src/pages/teste_inicio_page.dart';
-import 'package:ffa_2022/src/pages/teste_nota_selecionada_page.dart';
-import 'package:ffa_2022/src/pages/teste_notas_encontradas_page.dart';
 import 'package:ffa_2022/src/utils/preferencias_usuario.dart';
 
 void main() async {
@@ -85,18 +72,6 @@ class _MyAppState extends State<MyApp>{
               'lee_qr'                    : (ctx) => LeeQrPage(),
               'inicio'                    : (ctx) => InicioPage(),
               'lista-funcionarios'        : (ctx) => ListaFuncionariosPage(),
-              'notas_pendientes'          : (ctx) => NotasPendientesPage(),
-              'detalles_nota'             : (ctx) => DetallesNotaPage(settings.arguments),
-              'ingresar_estante'          : (ctx) => IngresaEstantePage(settings.arguments),
-              'busca_notas_separadas'     : (ctx) => BuscaNotasSeparadasPage(),
-              'consulta_detalles_nota'    : (ctx) => ConsultaDetallesNotaPage(settings.arguments),
-              'selecciona_radar'          : (ctx) => SeleccionarImpresoraRadarPage(),
-              'asigna_estante'            : (ctx) => AsignaEstantePage(),
-              'selecciona_sistema'        : (ctx) => SeleccionarSistemaPage(),
-              'teste_inicio'              : (ctx) => TesteInicioPage(),
-              'teste_notas_encontradas'   : (ctx) => TesteNotasEncontradasPage(settings.arguments),
-              'teste_nota_seleccionada'   : (ctx) => TesteNotaSeleccionadaPage(settings.arguments),
-              'separar_por_nota'          : (ctx) => SepararPorNotaPage(),
             };
 
             WidgetBuilder builder = routes[settings.name];
